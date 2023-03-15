@@ -1,0 +1,121 @@
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.imgs {
+    position: absolute;
+    margin: -28% 0 0 -58%;
+    cursor: pointer;
+    width: 125px;
+    height: 183px;
+}
+
+.imgs:hover {
+    background-color: rgba(169, 169, 169, 0.137);
+    width: 125px;
+    height: 183px;
+}
+
+img {
+    width: 125px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+label, p, button {
+    text-transform: uppercase;
+}
+
+.title {
+    transition: 0.2s;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title:hover {
+    transition: 0.2s;
+    color: darkgrey;
+}
+
+.input-field #dob {
+    color: white;
+    width: 100%;
+    padding: 0 0 0 10px;
+}
+
+.input-field #dob::placeholder {
+    text-transform: uppercase;
+}
+
+.input-field #dob:focus + label {
+    color: white;
+}
+
+.input-field #dob:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+
+.wrapper {
+    display: none;
+}
+
+.container {
+    width: 1400px;
+    height: 750px;
+    background-color: rgb(33, 33, 44);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContent {
+    display: none;
+}
+
+.box {
+    width: 800px;
+    height: 500px;
+    border-radius: 3px;
+    background-color: rgb(38, 38, 53);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.personContent {
+    display: none;
+}
+
+.personalinfo {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.playerInfo {
+    transition: 0.2s;
+    color: darkgrey;
+}
+
+.playerInfo:hover {
+    transition: 0.2s;
+    color: white;
+}

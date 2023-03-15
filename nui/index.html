@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title></title>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="./css/app.css" rel="stylesheet" />  
+    </head>  
+    <body>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="imgs waves-effect waves-light">
+                    <img draggable="false" src="https://iconape.com/wp-content/png_logo_vector/polisen-logo.png">
+                </div>
+                <div class="inputContent">
+                    <div class="box">
+                        <div class="boxContainer">
+                            <p class="title">BevisMaterial</p>
+                            <div class="input-field col s6">
+                                <input id="dob" type="text" class="validate">
+                                <label for="dob">Personnummer</label>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn blue waves-effect waves-light" id="completeSearch">SÖK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personContent">
+                    <div class="box">
+                        <div class="boxContainer">
+                            <p class="title">Bevisförråd</p>
+                            <div class="personalinfo">
+                                <!-- <p class="firstname">Laddar...</p>
+                                <p class="lastname">Laddar...</p>
+                                <p class="dob">Laddar...</p> -->
+                            </div>
+
+                            <div class="buttons">
+                                <button class="btn blue waves-effect waves-light" id="OpenStash">Öppna förråd</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
