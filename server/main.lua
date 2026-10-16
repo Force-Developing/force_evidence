@@ -186,8 +186,8 @@ lib.callback.register(RESOURCE .. ":server:open", function(source, lockerId, cit
     if not opened then return false, extra or "open_failed" end
 
     if Config.LogAccess then
-      Log("info", ("%s (%s, %s %s) opened the evidence locker of %s (%s) at %s"):format(GetPlayerName(source), source,
-        job.name, job.grade, name, citizen.id, locker.id))
+      Log("info", ("%s (%s, %s %s) opened the evidence locker of %s (%s) at %s (%s)"):format(GetPlayerName(source),
+        source, job.name, job.grade, name, citizen.id, locker.label, locker.id))
     end
     TriggerEvent(RESOURCE .. ":lockerOpened", source, citizen.id, locker.id, stash.id)
 
